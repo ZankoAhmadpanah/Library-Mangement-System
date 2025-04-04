@@ -1,0 +1,635 @@
+/* استایل کلی صفحه */
+body {
+    font-family: 'Vazirmatn', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #8ec5fc, #e0c3fc);
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* هدر */
+header {
+    background: linear-gradient(to bottom, #007BFF, #0056b3);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 15px 15px;
+}
+
+header h1 {
+    font-size: 2.8em;
+    margin: 0;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* منو */
+nav ul {
+    list-style: none;
+    margin: 15px 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #ffdd57;
+    color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* بخش اصلی */
+main {
+    margin: 30px auto;
+    max-width: 1100px;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* فرم جستجو */
+.search {
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(135deg, #ffffff, #f0f9ff);
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    position: relative;
+    margin-bottom: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.search:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.search h3 {
+    font-size: 2em;
+    color: #007BFF;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.search input {
+    width: 75%;
+    max-width: 500px;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 1em;
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+.search input:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.search button {
+    padding: 12px 25px;
+    font-size: 1.2em;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, #007BFF, #0056b3);
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background: linear-gradient(to right, #0056b3, #00449e);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.search button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* بخش خوش‌آمدگویی */
+.welcome {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(120deg, #e0f7fa, #ffffff);
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.welcome:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.welcome h2 {
+    font-size: 2.8em;
+    color: #007BFF;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.welcome p {
+    font-size: 1.4em;
+    color: #555;
+    line-height: 1.8;
+    transition: color 0.3s ease;
+}
+
+.welcome:hover p {
+    color: #333;
+}
+
+.welcome::before {
+    content: '✨';
+    font-size: 5em;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(0, 123, 255, 0.15);
+    z-index: -1;
+}
+
+.welcome::after {
+    content: '🌟';
+    font-size: 4em;
+    position: absolute;
+    bottom: -30px;
+    right: -20px;
+    color: rgba(0, 123, 255, 0.1);
+    z-index: -1;
+}
+
+/* ویژگی‌ها */
+.features {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 30px;
+    background: linear-gradient(to bottom, #ffffff, #f2f4f7);
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.features:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.features h3 {
+    color: #007BFF;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    max-width: 800px;
+}
+
+.features ul li {
+    padding: 20px;
+    font-size: 1.2em;
+    color: #444;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    cursor: pointer;
+}
+
+.features ul li:hover {
+    transform: translateY(-10px);
+    background: #e9f5ff;
+    color: #0056b3;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.features ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.features ul li a:hover {
+    color: #007BFF;
+}
+
+
+/* درباره ما */
+.about {
+    margin-bottom: 30px;
+    padding: 30px;
+    background: linear-gradient(135deg, #f9f9f9, #ffffff);
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.about:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 123, 255, 0.1), transparent);
+    transform: rotate(-45deg);
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.about h3 {
+    color: #007BFF;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.about p {
+    font-size: 1.3em;
+    line-height: 1.8;
+    color: #666;
+    margin: 0;
+    padding: 0;
+    transition: color 0.3s ease;
+}
+
+.about:hover p {
+    color: #444;
+}
+
+.about::after {
+    content: "📚";
+    font-size: 3em;
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    color: rgba(0, 123, 255, 0.1);
+    transform: rotate(-15deg);
+    z-index: -1;
+}
+
+/* تماس با ما */.contact {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact h3 {
+    font-size: 1.8em;
+    text-align: center;
+    color: #007BFF;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact label {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact button {
+    padding: 10px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.message {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    display: none;
+}
+
+.message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.submitted-messages {
+    margin-top: 20px;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.submitted-messages h4 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #007BFF;
+}
+
+.submitted-messages .message-card {
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: fadeIn 0.5s ease;
+}
+
+.submitted-messages .message-card h5 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.submitted-messages .message-card p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #555;
+}
+
+.submitted-messages .message-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation for message cards */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* فوتر */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #0056b3;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    margin: 0;
+}
+
+footer p span {
+    color: #ffdd57;
+    font-weight: bold;
+}
+/* پیام‌های موفقیت و اخطار */
+.message {
+    font-size: 1.1em;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+.book-display {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-display h3 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #007BFF;
+    text-align: center;
+}
+
+#book-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.book-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.book-card h4 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.book-card p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.book-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+/* Action Buttons Styling */
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.action-buttons .login-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(to right, #007BFF, #0056b3);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.action-buttons .login-btn:hover {
+    background: linear-gradient(to right, #0056b3, #003f7d);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+/* Login Prompt Section */
+#login-prompt {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 500px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+#login-prompt h3 {
+    font-size: 1.8em;
+    color: #007BFF;
+    margin-bottom: 15px;
+}
+
+#login-prompt p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.login-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #007BFF, #0056b3);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-btn:hover {
+    background: linear-gradient(to right, #0056b3, #003f7d);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+/* Sign In / Sign Up Button */
+.sign-in-up {
+    margin-top: 10px;
+}
+
+.sign-in-up-btn {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background: linear-gradient(to right, #007BFF, #0056b3);
+    border-radius: 50px; /* Oval Shape */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.sign-in-up-btn:hover {
+    background: linear-gradient(to right, #0056b3, #003f7d);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+/* Log Out Button Styling */
+.logout-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background: #e74c3c; /* Red color for logout */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.logout-btn:hover {
+    background: #c0392b;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}

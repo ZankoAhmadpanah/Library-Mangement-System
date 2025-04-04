@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Library Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="./Books/index.html">Books</a></li>
+                <li><a href="./Member/index.html">Members</a></li>
+                <li><a href="./Reaports/index.html">Reports</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+        <div class="sign-in-up">
+            <a href="./ورود و ثبت نام/index.html" class="sign-in-up-btn">Sign In / Sign Up</a>
+        </div>
+         
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h2>Welcome to the Library Management System</h2>
+            <p>With this system, you can efficiently manage library books and members.</p>
+        </section>
+
+        <section class="search">
+            <h3>Search Books</h3>
+            <form id="search-form">
+                <input type="text" id="search-query" placeholder="Enter book title" required>
+                <button type="submit">Search</button>
+            </form>
+            <div id="book-container"></div>
+        </section>
+
+        <section class="features">
+            <h3>Features</h3>
+            <ul>
+                <li><a href="./Books/index.html">Manage Books</a></li>
+                <li><a href="./Member/index.html">Manage Members</a></li>
+                <li><a href="#">Generate Reports on Book Status</a></li>
+                <li><a href="./جستجو/index.html">Advanced Search</a></li>
+            </ul>
+        </section>
+
+        <section class="about">
+            <h3>About Us</h3>
+            <p>This system is designed to provide a professional and fast experience for library management.</p>
+        </section>
+
+        <section class="contact">
+            <h3>Contact Us</h3>
+            <form id="contact-form" action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                
+                <button type="submit">Send</button>
+                <div id="form-feedback" class="message"></div>
+            </form>
+        
+            <div class="submitted-messages">
+                <h4>Submitted Messages</h4>
+                <ul id="message-list"></ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>All rights reserved for Team Shayan &copy; 2025</p>
+        <button id="logout-btn" class="logout-btn">Log Out</button>
+    </footer>
+    <script src="script1.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In / Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Library System</h1>
+        <p>Access your account or create a new one.</p>
+    </header>
+
+    <main>
+        <section class="auth-section">
+            <div class="tabs">
+                <button id="login-tab" class="active">Sign In</button>
+                <button id="signup-tab">Sign Up</button>
+            </div>
+            <!-- Login Form -->
+            <form id="login-form" class="form active" action="#" method="post">
+                <h2>Sign In</h2>
+                <div class="form-group">
+                    <label for="login-username">Username</label>
+                    <input type="text" id="login-username" placeholder="Enter your username" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="submit-btn">Sign In</button>
+                <p id="login-feedback" class="feedback-message"></p>
+            </form>
+
+            <!-- Sign-Up Form -->
+            <form id="signup-form" class="form" action="#" method="post">
+                <h2>Sign Up</h2>
+                <div class="form-group">
+                    <label for="signup-username">Username</label>
+                    <input type="text" id="signup-username" placeholder="Create a username" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" placeholder="Create a password" required>
+                </div>
+                <button type="submit" class="submit-btn">Sign Up</button>
+                <p id="signup-feedback" class="feedback-message"></p>
+            </form>
+        </section>
+    </main>
+
+    <div class="back-home">
+        <a href="../index1.html" class="back-home-btn">Back to Home Page</a>
+    </div>
+    <footer>
+        <p>&copy; 2025 Library System | All Rights Reserved</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
